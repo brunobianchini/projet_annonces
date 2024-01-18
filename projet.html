@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site de diffusion de petites annonces</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Site de diffusion de petites annonces</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Annonces</a></li>
+      <li><a href="#">Publier une annonce</a></li>
+      <li><a href="#">Mon compte</a></li>
+      <li><a href="#">Déconnexion</a></li>
+    </ul>
+  </nav>
+  
+  <section id="annonces">
+    <h2>Annonces</h2>
+    <div id="filtres">
+      <label for="categorie">Catégorie :</label>
+      <select id="categorie">
+        <option value="toutes">Toutes les catégories</option>
+        <option value="voitures">Voitures</option>
+        <option value="immobilier">Immobilier</option>
+        <option value="emplois">Emplois</option>
+      </select>
+      
+      <label for="mots-cles">Mots-clés :</label>
+      <input type="text" id="mots-cles">
+      
+      <button id="filtrer">Filtrer</button>
+    </div>
+    
+    <div id="liste-annonces">
+      <!-- Les annonces seront affichées ici dynamiquement -->
+    </div>
+  </section>
+  
+  <section id="publication">
+    <h2>Publier une annonce</h2>
+    <form>
+      <label for="titre">Titre :</label>
+      <input type="text" id="titre">
+      
+      <label for="description">Description :</label>
+      <textarea id="description"></textarea>
+      
+      <label for="categorie">Catégorie :</label>
+      <select id="categorie">
+        <option value="voitures">Voitures</option>
+        <option value="immobilier">Immobilier</option>
+        <option value="emplois">Emplois</option>
+      </select>
+      
+      <label for="prix">Prix :</label>
+      <input type="number" id="prix">
+      
+      <button id="publier">Publier</button>
+    </form>
+  </section>
+
+  <section id="compte">
+    <h2>Mon compte</h2>
+    <form>
+      <label for="email">Email :</label>
+      <input type="email" id="email">
+      
+      <label for="motdepasse">Mot de passe :</label>
+      <input type="password" id="motdepasse">
+      
+      <button id="connexion">Se connecter</button>
+      <button id="creercompte">Créer un compte</button>
+      <button id="modifiercompte">Modifier mon compte</button>
+      <button id="supprimercompte">Supprimer mon compte</button>
+      <button id="recupereridentifiants">Récupérer mes identifiants</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>Tous droits réservés &copy; 2022</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

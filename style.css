@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header, nav, section, footer {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+#liste-annonces {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#liste-annonces article {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  color: #999;
+}
+``Voici un exemple de code JavaScript (script.js) pour ajouter des fonctionnalités au front-office du site de diffusion de petites annonces :
+
+```javascript
+// Fonction pour filtrer les annonces
+document.getElementById("filtrer").addEventListener("click", function(e) {
+  e.preventDefault();
+  
+  var categorie = document.getElementById("categorie").value;
+  var motsCles = document.getElementById("mots-cles").value;
+  
+  // Effectuer la requête AJAX pour récupérer les annonces filtrées
+  // et mettre à jour la liste des annonces affichées
+});
+
+// Fonction pour publier une annonce
+document.getElementById("publier").addEventListener("click", function(e) {
+  e.preventDefault();
+  
+  var titre = document.getElementById("titre").value;
+  var description = document.getElementById("description").value;
+  var categorie = document.getElementById("categorie").value;
+  var prix = document.getElementById("prix").value;
+  
+  // Effectuer la requête AJAX pour publier l'annonce
+  // et afficher un message de confirmation
+});
+
+// Fonction pour se connecter
+document.getElementById("connexion").addEventListener("click", function(e) {
+  e.preventDefault();
+  
+  var email = document.getElementById("email").value;
+  var motdepasse = document.getElementById("motdepasse").value;
+  
+  // Effectuer la requête AJAX pour vérifier les identifiants de connexion
+  // et afficher un message de bienvenue ou une erreur
+});
+
+// Fonction pour créer un compte
+document.getElementById("creercompte").addEventListener("click", function(e) {
+  e.preventDefault();
+  
+  var email = document.getElementById("email").value;
+  var motdepasse = document.getElementById("motdepasse").value;
+  
+  // Effectuer la requête AJAX pour créer un compte utilisateur
+  // et afficher un message de succès ou une erreur
+});
+
+// Fonction pour modifier le compte utilisateur
+document.getElementById("modifiercompte").addEventListener("click", function(e) {
+  e.preventDefault();
+  
+  var email = document.getElementById("email").value;
+  var motdepasse = document.getElementById("motdepasse").value;
+  
+  // Effectuer la requête AJAX pour modifier le compte utilisateur
+  // et afficher un message de succès ou une erreur
+});
+
+// Fonction pour supprimer le compte utilisateur
+document.getElementById("supprimercompte").addEventListener("click", function(e) {
+  e.preventDefault();
+  
+  var confirmation = confirm("Êtes-vous sûr de vouloir supprimer votre compte ?");
+  
+  if (confirmation) {
+    // Effectuer la requête AJAX pour supprimer le compte utilisateur
+    // et afficher un message de confirmation
+  }
+});
+
+// Fonction pour récupérer les identifiants à partir de l'adresse e-mail
+document.getElementById("recupereridentifiants").addEventListener("click", function(e) {
+  e.preventDefault();
+  
+  var email = document.getElementById("email").value;
+  
+  // Effectuer la requête AJAX pour récupérer les identifiants
+  // et afficher un message avec les informations récupérées
+});
